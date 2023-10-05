@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>dwba4-semana-03-PT3020037</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+    <section id='main'>
+      <section id="topo">
+        <div id="navbar-placeholder"></div>
+        <script>
+          fetch('navbar.html')
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('navbar-placeholder').innerHTML = data;
+              });
+        </script>
+      </section>
+      <div class='image-container' />
+        <div class='image-ifsp'>
+          <img src="images/Logo.jpg" />
+        </div>
+        <div class='image-ifsp-complement'></div>
+      </div>
+      <div class='login'>
+        <img class='ifsp' src='images/ifsp.png' />
+        <br>
+        <h4>Faça Login</h4>
+        <form>
+          <input class='form-control' type='email' placeholder="Seu email" required/>
+          <input class='form-control' type='password' placeholder="Senha" required/>
+          <input type='checkbox'>
+          <label>Lembrar de mim</label>
+          <br>
+          <div class='forgot-password'>
+            <a href='#'>Esqueci a senha</a>
+          </div>
+          <input class="btn btn-primary" type="submit" value='Login' class="btn btn-primary">
+          <br>
+          <br>
+          <p>© 2020</p>
+        </form>
+      </div>
+      <br><br>
+      &nbsp;&nbsp;<a href="https://www.facebook.com/ifsppirituba" title="IFSP Facebook"><img width="40" height="40" src="images/facebook.png" /></a>
+      <footer><p>&nbsp;&nbsp;&nbsp;SP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p></footer>
+    </section>
+  </body>
+</html>
